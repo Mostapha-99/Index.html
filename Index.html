@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Effect</title>
+  <style>
+    /* أضف هنا الكود الخاص بتأثيرات الخيوط الملونة */
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #000;
+      overflow: hidden;
+    }
+    .effect {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      animation: move 2s infinite;
+    }
+    @keyframes move {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(300px, 300px); }
+      100% { transform: translate(0, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="effect"></div>
+</body>
+</html>
